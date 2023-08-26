@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>
+            Library
+        </h1>
+        <hr/>
+        <div id="book-list-container" class="book-list-container">
+            <ul id="book-list" class="book-list"></ul>
+        </div>
+        <button id="new-book-btn">New Book</button>
+    </div>
+
+    <div class="sidebar">
+        <button id="sidebar-close-btn">X</button>
+        <div class="form-container">
+            <form id="sidebar-form">
+                    <!-- Form fields go here -->
+                    <input type="text" name="title" id="title-input" placeholder="Title" required>
+                    <input type="text" name="author" id="author-input" placeholder="Author" required>
+                    <input type="number" name="pages" id="pages-input" placeholder="Pages Read" required>
+
+                    <div class="check-container">
+                        <label for="read">Read?</label>
+                        <input type="checkbox" name="read" id="read-input">
+                    </div>
+
+                    <button type="submit" id="submit-btn">Submit</button>
+            </form>
+        </div>
+    </div>
+
+</body>
+
+<script src="library.js"></script>
+
+</html>
